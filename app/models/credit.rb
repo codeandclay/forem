@@ -14,7 +14,7 @@ class Credit < ApplicationRecord
                     column_names: {
                       ["credits.spent = ?", true] => "spent_credits_count",
                       ["credits.spent = ?", false] => "unspent_credits_count",
-                      # ["credits.id > ?", 0] => "credits_count"
+                      ["credits.id > ?", 0] => "credits_count"
                     }
   end
 
